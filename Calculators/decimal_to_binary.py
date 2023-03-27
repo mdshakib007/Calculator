@@ -1,11 +1,9 @@
 class Binary:
     """Convert decimal to binary"""
-    def __init__(self):
-        self.n = int(input("Enter decimal number: "))
-
-    def dec_to_binary(self):
+    @staticmethod
+    def dec_to_binary():
+        n = int(input("Enter decimal number: "))
         bits = []
-        n = self.n
         if n == 0:
             return "The binary number: 0"
 

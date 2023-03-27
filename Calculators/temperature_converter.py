@@ -2,9 +2,9 @@ class Temperature:
 	def __init__(self):
 		pass
 		
-	def what(self):
-		print("    Your Temperature is___\n    1. 'Celcious'\n    2. 'Fahrenheit'\n    3. 'Kelvin'\n")
-		want = input("    |")
+	def convert(self):
+		print("        Your Temperature is___\n        1. 'Celcious'\n        2. 'Fahrenheit'\n        3. 'Kelvin'\n")
+		want = input("        |")
 		
 		if want == "1":
 			C = int(input("Enter temperature in 'Celsius': "))
@@ -28,11 +28,11 @@ class Temperature:
 			return f"{K}K is equal to {C:.2f}°C\n{K}K is equal to {F:.2f}°F"
 								
 		else:
-			return "Please inter 1,2,3..."
+			return "Please inter temperature."
 			
 
 
 if __name__ == "__main__":
 	t = Temperature()
-	print(t.what())
+	print(t.convert())
 		
